@@ -14,14 +14,11 @@ export const APP_ROUTES: Routes = [
     component: NotFoundComponent, 
     pathMatch: 'full',
   },
-
-  // Your route here:
-
 {
  path: 'launch',
   component: WebComponentWrapper,
   data: {
-    type: 'script',
+    type: 'module',
     remoteEntry:
       'http://localhost:4202/remoteEntry.js',
     remoteName: 'launch',
